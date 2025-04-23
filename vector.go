@@ -13,6 +13,10 @@ func FromArray(array []float64) Vector3 {
 	return Vector3{X: array[0], Y: array[1], Z: array[2]}
 }
 
+func ToArray(v Vector3) []float64 {
+	return []float64{v.X, v.Y, v.Z}
+}
+
 func Zero() Vector3 {
 	return Vector3{X: 0, Y: 0, Z: 0}
 }
